@@ -59,11 +59,49 @@ form.sign-up-form {
 form.sign-in-form {
   z-index: 2;
 }
+.dropbtn {
+  background-color: #f0f0f0;
+  color: black;
+  padding: 16px;
+  padding: 270px;
 
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+  padding-right: 500px;
+  width: 500px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+box-sizing: 60px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #f0f0f0;}
 .title {
   font-size: 2.2rem;
   color: #444;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .input-field {
@@ -71,7 +109,7 @@ form.sign-in-form {
   width: 100%;
   background-color: #f0f0f0;
   margin: 10px 0;
-  height: 55px;
+  height: 45px;
   border-radius: 55px;
   display: grid;
   grid-template-columns: 15% 85%;
@@ -79,9 +117,10 @@ form.sign-in-form {
   position: relative;
 }
 
+
 .input-field i {
   text-align: center;
-  line-height: 55px;
+  line-height: 45px;
   color: #acacac;
   transition: 0.5s;
   font-size: 1.1rem;
